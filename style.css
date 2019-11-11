@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Amatic SC', cursive;
+    margin: 0;
+    padding: 0; 
+}
+
+/*Navigation*/
+header{
+    background-color: rgba(153, 212, 134, 0.69);
+    position: fixed;
+    text-align: center;
+    font-size: 25px;
+    margin: 0;
+    line-height: 65px;
+    width: 100%;
+    top:0;
+    overflow: hidden;
+}
+ul{
+    list-style-type: none;
+    text-align: right;
+    margin: 0;
+}
+li{
+    display: inline-block;
+    padding-left: 30px;
+    letter-spacing: 1px; 
+    
+}
+a{
+    text-decoration: none;  
+    color:#000000;
+
+}
+a:hover{
+    color:#FCF7FF;
+    border-bottom: 3px;
+    border-style: double;
+    border-color:#FCF7FF;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.hamburger{
+    display: inline-block;
+    cursor:pointer;
+    margin-right: 30px;
+    margin-top: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.ham1, .ham2, .ham3{
+    width: 35px;
+    height: 5px;
+    background-color:#000000;
+    margin: 6px 0;
+    transition: 0.6s;
+    border-radius: 20px;
+}
+.change .ham1{
+    -webkit-transform: rotate(-45deg) translate(-8px, 7px);
+    transform: rotate(-45deg) translate(-8px, 7px);
+}
+.change .ham2{
+    opacity: 0;
+    
+} 
+.change .ham3{
+    -webkit-transform: rotate(45deg) translate(-9px,-7.25px); 
+    transform: rotate(45deg) translate(-9px,-7.25px);
+    
+}
+    
+
+
+/*------------------*/
+
+/*ScrollBar*/
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+    background-color: #F5F5F5;
+
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+ 
+/* Handle */
+/*
+#c9e9c0
+#9ad487
+#7bc763
+#59b93b
+
+
+*/
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+	background-color: #FFF;
+	background-image: -webkit-linear-gradient(top,
+											  #c9e9c0 0%,
+											  #9ad487 50%,
+											  #7bc763 51%,
+											  #59b93b 100%);
+}
+
+::-webkit-scrollbar-corner{
+    width: 10px;
+}
+
+/*-----------------*/
