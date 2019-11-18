@@ -5,6 +5,7 @@ body{
     font-family: 'Amatic SC', cursive;
     margin: 0;
     padding: 0; 
+    background-color:#f2fdf2;
 }
 
 /*Navigation*/
@@ -18,6 +19,7 @@ header{
     width: 100%;
     top:0;
     overflow: hidden;
+    z-index: 1;
 }
 ul{
     list-style-type: none;
@@ -52,14 +54,16 @@ a:hover{
     position: absolute;
     top: 0;
     right: 0;
+    display: none;
 }
 .ham1, .ham2, .ham3{
     width: 35px;
     height: 5px;
-    background-color:#000000;
+    background-color:#59b93b;
     margin: 6px 0;
     transition: 0.6s;
-    border-radius: 20px;
+    border-bottom-left-radius: 15px; 
+    border-bottom-right-radius: 15px; 
 }
 .change .ham1{
     -webkit-transform: rotate(-45deg) translate(-8px, 7px);
@@ -74,7 +78,49 @@ a:hover{
     transform: rotate(45deg) translate(-9px,-7.25px);
     
 }
+.change{
+    position: absolute;
+    top: 0;
+    right: 0;
     
+}
+
+ 
+
+/*-----------------*/
+
+/*Mobile*/
+#mobile_view{
+    position: fixed;
+    top:0;
+    right:0;
+    display: block;
+    width: 17em;
+    height: 25em;
+    background-color: #c9e9c0;
+    border-bottom-left-radius: 25px;
+    display: none;
+    border-left: solid 1px green;
+    border-bottom: solid 1px green;
+    overflow: hidden;
+}
+#mobile_menu{
+     list-style-type: none;
+    text-align: right;
+    display: flex;
+    margin: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    
+}  
+.mobile_class{
+    margin: 10px;
+    font-size: 25px;
+    
+    
+}
 
 
 /*------------------*/
@@ -93,7 +139,6 @@ a:hover{
 	border-radius: 10px;
 }
  
-/* Handle */
 /*
 #c9e9c0
 #9ad487
@@ -117,3 +162,46 @@ a:hover{
 }
 
 /*-----------------*/
+
+/*Responsive_selection*/
+
+@media screen and (max-width: 900px){
+    header{
+    background: none;
+    position: fixed;
+    text-align: center;
+    margin: 0;
+    line-height: 65px;
+    width: 100%;
+    top:0;
+    overflow: hidden;
+    z-index: 1;
+    font-size: 0;
+    }
+    .hamburger{
+        display: block;
+        
+    }
+   
+}
+
+/*--------------------*/
+
+
+/*Main content*/
+#responsive_selection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: anything under 100%;
+    
+}
+span{
+    border: 4px double black;
+    width: 150px;
+    height: 15px;
+    text-align: center;
+    
+}
+
+/*------------*/
