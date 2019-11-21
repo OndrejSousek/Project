@@ -10,7 +10,7 @@ body{
 
 /*Navigation*/
 header{
-    background-color: rgba(153, 212, 134, 0.69);
+    background-color: rgba(123, 199, 99, 0.83);
     position: fixed;
     text-align: center;
     font-size: 25px;
@@ -20,6 +20,7 @@ header{
     top:0;
     overflow: hidden;
     z-index: 1;
+/*    rgba(153, 212, 134, 0.69)*/
 }
 ul{
     list-style-type: none;
@@ -34,14 +35,14 @@ li{
 }
 a{
     text-decoration: none;  
-    color:#000000;
+    color:#f2fdf2;
 
 }
 a:hover{
-    color:#FCF7FF;
+    color:green;
     border-bottom: 3px;
     border-style: double;
-    border-color:#FCF7FF;
+    border-color:green;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -85,8 +86,6 @@ a:hover{
     
 }
 
- 
-
 /*-----------------*/
 
 /*Mobile*/
@@ -121,7 +120,6 @@ a:hover{
     
     
 }
-
 
 /*------------------*/
 
@@ -196,6 +194,157 @@ a:hover{
     width: anything under 100%;
     
 }
+img{
+    margin-top: 250px;
+}
+.selection_1{
+    height: 42em;
+    background-color: #f2fdf2;
+}
+.selection_2{
+    height: 29em;
+    background-color: #9ad487;
+    margin: 0;
+    padding: 20px;
+    font-size: 22.5px;
+    color: #f2fdf2;
+}
+.selection_3{
+    height: 16em;
+    margin: 0;
+    padding: 20px;
+    background-color: #f2fdf2;
+    color: #9ad487;
+    
+}
+hr{
+    overflow: visible;
+    padding: 0;
+    border: none;
+    border-top: medium double #f2fdf2;
+    color: #f2fdf2;
+    text-align: center;
+}
+hr:after{
+    content:"☯";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0.025em;
+    background: #9ad487;
+    
+}
+.mail_box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+}
+.submit{
+    height: 40px;
+    width: 130px;
+    
+}
+#button{
+    outline:none;
+    height: 40px;
+    text-align: center;
+    width: 130px;
+    border-radius: 40px;
+    background: #fff;
+    border: 2px solid #59b93b;
+    color: #59b93b;
+    letter-spacing: 1px;
+    text-shadow: 0;
+    font-size:12px;
+    font-weight:bold; 
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+    #button:hover{
+        color: white;
+        background: #59b93b;
+    }
+    #button:active{
+        letter-spacing: 2px;
+    }
+    #button:after{
+        content: "SUBMIT";
+    }
+
+.onclick{
+	width: 40px;
+	border-color: #bbbbbb;
+	border-width: 3px;
+	font-size: 0;
+	border-left-color: #1ECD97;
+	-webkit-animation: rotating 2s 0.25s linear infinite;
+          animation: rotating 2s 0.25s linear infinite;
+}
+.onclic:after {
+  content: "";
+}
+.onclic:hover {
+  color: #1ECD97;
+  background: white;
+}
+
+.validate {
+  font-size: 13px;
+  color: white;
+  background: #1ECD97;
+}
+.validate:after {
+  font-family: 'FontAwesome';
+  content: "\f00c";
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+    
+footer{
+    height: 14em;
+    background-color:#9ad487;
+    margin: 0;
+    padding: 20px;
+    color: #f2fdf2;
+	text-align: center;
+	line-height: 18em;
+}
+.ending{
+	background-color:#59b93b;
+	height: 2.5em;
+	line-height: 50px;
+	width:100%;
+	text-align: center;
+	color: #f2fdf2;
+	font-weight: 15px;
+	letter-spacing: 2px;
+	
+	
+}
+/*
 span{
     border: 4px double black;
     width: 150px;
@@ -203,5 +352,7 @@ span{
     text-align: center;
     
 }
+*/
+
 
 /*------------*/
